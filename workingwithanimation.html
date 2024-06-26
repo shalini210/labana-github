@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.banner
+{
+    width:100%;
+    height:500px;
+    /* background-color: blueviolet; */
+}
+
+.slide1
+{
+    height:500px;
+background-color: rgb(136, 225, 225);
+animation-name: animate1;
+animation-duration:10s;
+animation-iteration-count: infinite;
+float:left;
+}
+.slide2
+{
+    float:left;
+    height:500px;
+    width:50%;
+    animation-iteration-count: infinite;
+background-color: rgb(7, 104, 104);
+/* float:right; */
+animation-name: animate2;
+animation-duration:10s;
+/* animation-delay: 5s; */
+}
+.slide3
+{
+/* background-color: rgb(189, 26, 64);
+animation-name: animate2;
+animation-duration:10s;
+height: 500px;
+animation-delay: 5s; 
+animation-iteration-count: infinite; */
+}
+ @keyframes animate1 {
+    0%{width:100%}
+    100%{width:0%;}
+}
+
+@keyframes animate2 {
+    0%{width:0%;}    
+    100%{width:100%;}
+ }
+ 
+@keyframes animate3 {
+    0%{width:100%}
+    100%{width:0%;}
+} 
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="slide slide1">
+
+        </div>
+        <div class="slide2">
+
+        </div>
+        <div class="slide slide3">
+
+        </div>
+    </div>
+    
+</body>
+</html>
