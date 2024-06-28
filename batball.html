@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ballbox
+        {
+            height:280px;
+            position: fixed;
+        }
+        .ball
+        {
+            height:80px;
+            width:80px;
+            border-radius: 50%;
+            background-color: brown;
+            margin-left:188px;
+            animation: animate1 5s infinite;
+            z-index: 10;
+            position:fixed;
+        }
+
+        @keyframes animate1 {
+            0%{margin-top:0px;}
+            35%{margin-top:200px}
+            100%{margin-top:0%;}
+        }
+        @keyframes animatebat {
+            0%{rotate:0deg;}
+            35%{rotate: 20deg;}
+            100%{rotate:0deg;}
+            
+        }
+        .bat
+        {
+            height:170px;
+            width:270px;
+            animation: animatebat 5s infinite;
+            background-image: url(images/bat.png);
+            background-size: cover;
+            position: absolute;
+            top: 226px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ballbox">
+    <div class="ball"></div>
+</div>
+    <div class="bat"></div>
+</body>
+</html>
