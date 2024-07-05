@@ -24,15 +24,57 @@
             border:2px solid rgba(227, 200, 255, 0.913);
             box-shadow: 7px 7px rgba(227, 200, 255, 0.7);
         }
+        menu
+        {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(194, 136, 249);
+            gap:20px;
+        }
     </style>
 </head>
 <body>
+<menu id="menu">
+    <li> <a href="#home">Home</a></li>
+    <li> <a href="#about">about</a></li>
+    <li> <a href="#contact">contact</a></li>
+    <li> <a href="#gallery">gallery</a></li>
+
+</menu>
     
-    <div class="boxcontainer">
+    <div class="boxcontainer" id="home">
+        <h1>this is home </h1>
         <div class="box"></div>
             <div class="box"></div>
                 <div class="box"></div>
                     <div class="box"></div>
     </div>
+
+    <div class="boxcontainer" id="about">
+        <h1>this is about</h1>
+        <div class="box"></div>
+            <div class="box"></div>
+                <div class="box"></div>
+                    <div class="box"></div>
+    </div>
+
+    <div class="boxcontainer" id="contact">
+        <h1>this is contact</h1>
+        <div class="box"></div>
+            <div class="box"></div>
+                <div class="box"></div>
+                    <div class="box"></div>
+    </div>
+    <div class="boxcontainer" id="gallery">
+        <h1>this is gallery</h1>
+        <div class="box"></div>
+            <div class="box"></div>
+                <div class="box"></div>
+                    <div class="box"></div>
+    </div>
+<a href="#menu">Go to top</a>
 </body>
 </html>
